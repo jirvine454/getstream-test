@@ -48,6 +48,7 @@ export class ClassComponent implements OnInit {
 
       if (filtered.length) {
         // User is already member
+        console.log('user has this channel!');
         const toJoin = filtered[0];
 
         this.channelService.setAsActiveChannel(toJoin);
@@ -76,6 +77,7 @@ export class ClassComponent implements OnInit {
 
   leaveClassChat() {
     this.channelService.activeChannel$.pipe(take(1)).subscribe((channel) => {
+      console.log('leaving channel...', channel); 
       if (channel) {
         channel.removeMembers([this.authService.getCurrentUserId()]);
         this.joinedChat = false;

@@ -26,7 +26,6 @@ export class AuthService {
 
     if (token) {
       const decoded: any = jwt_decode(token);
-
       this.http
         .post(`${window.location.origin}/.netlify/functions/get_token`, {
           id: decoded.sub,

@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  streamKey: 'jpg6pvdxkgyc',
+  streamKey: 'avusc5dgs9zp',
 };

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  streamKey: 'jpg6pvdxkgyc',
+  streamKey: 'avusc5dgs9zp',
 };
 
 /*
